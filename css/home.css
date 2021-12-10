@@ -375,18 +375,18 @@ footer{
         width: 100%;
     }
     .blog .contaier .card .absolute .calendar{
-        margin-left: 10vh;
+        margin-left: 18vh;
     }
     .blog .contaier .card .into .button{
-        margin-left: 35px;
+        margin-left: 50px;
     }
 }
 @media (max-width: 380px){
     .blog .contaier .card .absolute .calendar{
-        margin-left: 7vh;
+        margin-left: 17vh;
     }
     .blog .contaier .card .into .button{
-        margin-left: 25px;
+        margin-left: 55px;
     }
     .footer{
         display: block;
@@ -398,7 +398,11 @@ footer{
         font-size: 18px;
     }
 }
+
 @media (max-width: 350px){
+    .blog .contaier .card .into{
+        width: -webkit-fill-available;
+    }
     .blog .contaier .card .absolute{
         display: none;
     }
@@ -406,13 +410,16 @@ footer{
         font-size: 17px;
     }
     .blog .contaier .card .into .button{
-        margin-left: 9px;
+        margin-left: 50px;
     }
 }
 @media (max-width: 330px){
+    .blog .contaier .card .into{
+        width: 261px;
+    }
     .blog .contaier .card .into .button{
         padding: 10px 30px;
-        margin-left: 15px;
+        margin-left: 60px;
     }
 }
 @media (max-width: 310px){
@@ -420,9 +427,10 @@ footer{
         height: 320px;
     }
     .blog .contaier .card .into{
+        width: 260px;
         top: 40%;
     }
     .blog .contaier .card .into .button{
-        margin-left: 10px;
+        margin-left: 50px;
     }
 }
