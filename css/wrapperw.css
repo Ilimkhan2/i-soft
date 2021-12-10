@@ -334,22 +334,6 @@ li{
     transition: all .3s ease;
 }
 
-#overlay{
-    position: fixed;
-    z-index: -1;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    transition: 200ms ease-in-out;
-}
-#overlay.active{
-    pointer-events: all;
-    opacity: 1;
-}
-
 
 @media (max-width: 1050px){
     .min-tilems .text a{

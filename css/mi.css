@@ -189,7 +189,22 @@ li{
     border: 1px solid #FF0000;
     transition: all .3s ease;
 }
- .min-tilems .text{
+.min-tilems .button{
+    background: none;
+    font-size: 15px;
+    border: 1px solid #FF0000;
+    color: #ff0000;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.min-tilems .button:hover{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #FF0000;
+    transition: all .3s ease;
+}
+.min-tilems .text{
     display: flex;
     margin-top: 90px;
 }
@@ -243,7 +258,7 @@ li{
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     background-color: #fff;
-    padding: 30px 50px;
+    padding: 30px 30px;
     border-radius: 5px;
     width: 600px;
     height: 350px;
@@ -259,19 +274,8 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-.modal-item{
-    text-align: center;
-}
-.modal-item .item-text{
-    margin-top: 35px;
-}
-.modal-item .item-text h2{
-    font-size: 18px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.75);
-}
 .modal-weader h1{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     margin-left: 136px;
 }
@@ -282,108 +286,48 @@ li{
     background: none;
     font-size: 25px;
 }
-.modal .button{
-    width: 48%;
-    margin: auto;
-    margin-left: 21rem;
-}
-#overlay{
-    position: fixed;
-    z-index: -1;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    transition: 200ms ease-in-out;
-}
-#overlay.active{
-    pointer-events: all;
-    opacity: 1;
-}
 .modal__dialogw{
     width: auto;
-    text-align: center;
     position: relative;
+    display: flex;
 }
-.modal__dialogw .row100{
-    position: relative;
-    width: 100%;
-    display: grid;
+.modal__dialogw img{
+    width: 45%;
 }
-.modal__dialogw .row100 .col{
-    position: relative;
-    width: 97%;
-    padding: 0 10px;
-    margin: 30px 0 10px;
-    transition: 0.5s;
+.modal__dialogw .into{
+    margin-top: 60px;
+    margin-left: 15px;
 }
-.modal__dialogw .row100 .col .inputBox{
-    position: relative;
-    width: 100%;
-    height: 40px;   
-    color: #999;
-}
-.modal__dialogw .row100 .col .inputBox input{
-    position: absolute;
-    width: 96%;
-    height: 100%;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    outline: none;
+.modal__dialogw .into h1{
     font-size: 18px;
-    padding: 0 10px;
-    z-index: 1;
-    color: #fff;
-    margin-left: -17.8rem;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
-.modal__dialogw .row100 .col .inputBox .text_span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 40px;
-    font-size: 18px;
-    padding: 0 10px;
-    display: block;
-    transition: 0.5s;
-    pointer-events: none;
+.modal__dialogw .into p{
+    font-weight: 800;
+    color: #FF0000;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
-.modal__dialogw .row100 .inputBox input:focus + .text_span,
-.modal__dialogw .row100 .inputBox input:valid + .text_span{
-    top: -35px;
-    left: -10px;
+.modal__dialogw .button{
+    display: flex;
 }
-.modal__dialogw .row100 .inputBox .line{
-    position: absolute;
-    bottom: 0;
-    display: block;
+.modal .modal__dialogw .button{
     width: 100%;
-    height: 2px;
-    background: #ff0000;
-    transition: 0.5s;
-    border-radius: 2px;
-    pointer-events: none;
+    margin: auto;
+    margin-left: 0;
 }
-.modal__dialogw .row100 .inputBox input:focus ~ .line,
-.modal__dialogw .row100 .inputBox input:valid ~ .line{
-    height: 100%;
-}
-.modal__dialogw .row100 .cola input{
-    border-radius: 10px;
+.modal .modal__dialogw a{
     background: none;
-    border: none;
-    margin: 1rem 3rem;
-    cursor: pointer;
-    outline: none;
-    border:  1px solid #ff0000;
+    font-size: 14px;
+    border: 1px solid #FF0000;
     color: #ff0000;
-    padding: 1rem 2rem;
-    font-size: 15px;
+    padding: 1rem 15px;
+    border-radius: 5px;
     transition: all .3s ease;
+    margin: 0 10px;
 }
-.modal__dialogw .row100 .cola input:hover{
+.modal .modal__dialogw a:hover{
     background: #FF0000;
     color: #fff;
     border: 1px solid #FF0000;
