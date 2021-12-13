@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #FFF;
+}
+html::-webkit-scrollbar-thumb{
+    background: #FF0000;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(30vw - 75px);
+    font-size: 80px;
+}
+.loader{ 
+    width: 21ch; 
+    margin-bottom: 10px; 
+    font-family: monospace; 
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: flashing-border 0.75s step-end infinite,  
+    printed-text 1s steps(21); 
+}
+.loader span{
+    color: #FF0000;
+}
+
+
+.navber .content{
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navber{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    padding: 5px 0;
+    background: #fff;
+    transition: all .3s ease;
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+}
+.navber.actcve{
+    padding: 25px 0;
+    transition: all .3s ease;
+}
+.navber .content .logo img{
+    width: 10%;
+}
+.navber .content .logo a{
+    display: flex;
+    align-items: center;
+}
+.navber .content .logo a .logo-text{
+    padding: 0 10px;
+}
+.navber .content .logo a .logo-text h2{
+    font-weight: 500;
+    color: #393939;
+    font-size: 22px;
+}
+.navber .content .logo a .logo-text p{
+    font-weight: 500;
+    color: #393939;
+    font-size: 10px;
+}
+.navber .content .menu-lier{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 200px;
+    height: 100vh;
+    margin-top: 0;
+    padding: 30px 40px;
+    text-align: left;
+    transition: all .3s ease;
+    background: #fff;
+    border-top: 1px solid #FF0000 ;
+}
+.navber .content .menu-lier.sticve{
+    right: 0%;
+}
+.navber .content .menu-lier li{
+    margin-top: 45px;
+}
+.navber .content .menu-lier li a{
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+.navber .content .menu-lier li a:hover{
+    color: #FF0000;
+    transition: all .3s ease;
+}
+.icon{
+    font-size: 21px;
+    color: #000;
+    cursor: pointer;
+}
+.icon.cancel-ber{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.icon.hide{
+    display: none;
+}
+
+
+.wrapper{
+    width: 1150px;
+    margin: auto;
+    padding: 100px 40px 40px 40px;
+}
+.wrapper .wrapper-text{
+    margin-bottom: 70px;
+}
+.wrapper .wrapper-text h1{
+    font-size: 42px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.wrapper .text_p h2{
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px 0;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.wrapper .text_p h3{
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 27px;
+    margin-bottom: 17px;
+    color: #000;
+}
+.wrapper .text_p p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    color: #000;
+}
+.wrapper .text_p p span{
+    font-weight: bold;
+}
+.wrapper .text_p .text_scoll{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #000;
+}
+.wrapper .text_p .text_scoll a{
+    color: #FF0000;
+}
+.wrapper .text_p .text_scolle {
+    font-weight: bold;
+}
+.wrapper .text_p .text_scolly{
+    font-style: italic;
+}
+.wrapper .text_p ul{
+    padding: 0 20px;
+}
+.wrapper .text_p ul li{
+    line-height: 28px;
+    list-style: disc;
+    font-size: 18px;
+}
+.wrapper .text_p img{
+    box-sizing: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    margin-bottom: 9px;
+}
+
+
+
+
+
+
+
+
+footer{
+    background: #FBECEC;
+}
+.footer{
+    width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 170px;
+}
+.footer .text{
+    padding: 40px 15px;
+    margin-right: 150px;
+}
+.footer .text h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #382626;
+}
+.footer .text p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #38262680;
+}    
+.footer .text p i{
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.footer .button{
+    padding: 40px 15px;
+}
+.footer .button h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #382626;
+}
+.footer .button button{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 15px 35px;
+    background: #FF0000;
+    color: #fff;
+    border-radius: 10px;
+}
+.modal{
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.modal.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modal .modal-window{
+    background: #fff;
+    width: 800px;
+    border-radius: 10px;
+}
+.modal .modal-header,
+.modal .modal-body{
+    margin: 2rem 2rem 0 2rem;
+}
+.modal .modal-footer{
+    position: relative;
+    bottom: 100px;
+}
+.modal .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal .modal-header .title{
+    margin: auto;
+    font-size: 20px;
+}
+.modal .modal-header .close{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.modal__dialog{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.modal__dialog .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+.modal__dialog .row100 .col{
+    position: relative;
+    width: 97%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.modal__dialog .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;   
+    color: #999;
+}
+.modal__dialog .row100 .col .inputBox input{
+    position: absolute;
+    width: 96%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+    margin-left: -20.8rem;
+}
+.modal__dialog .row100 .col .inputBox .text_span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.modal__dialog .row100 .inputBox input:focus + .text_span,
+.modal__dialog .row100 .inputBox input:valid + .text_span{
+    top: -35px;
+    left: -10px;
+}
+.modal__dialog .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.modal__dialog .row100 .inputBox input:focus ~ .line,
+.modal__dialog .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+.modal__dialog .row100 .cola input{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    margin: 1rem 3rem;
+    cursor: pointer;
+    outline: none;
+    border:  1px solid #ff0000;
+    color: #ff0000;
+    padding: 1rem 2rem;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+.modal__dialog .row100 .cola input:hover{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #FF0000;
+    transition: all .3s ease;
+}
+
+
+@media (max-width: 1230px){
+    .wrapper{
+        width: auto;
+    }
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 980px){
+    .wrapper .text_p img{
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 790px){
+    .footer{
+        width: 87%;
+    }
+    .modal .modal-window{
+        width: 650px;
+    }
+    .modal .modal__dialog{
+        width: 500px;
+    }
+    .modal .modal__dialog .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
+}
+@media (max-width: 440px){
+    .wrapper .wrapper-text h1{
+        font-size: 25px;
+    }
+    .wrapper .text_p h2{
+        font-size: 22px;
+    }
+    .wrapper .text_p h3{
+        font-size: 19px;
+    }
+    .wrapper .text_p p{
+        font-size: 15px;
+    }
+    .wrapper .text_p ul li{
+        font-size: 15px;
+    }
+    .wrapper .text_p .text_scoll{
+        font-size: 15px;
+    }
+}
+@media (max-width: 650px){
+    .modal{
+        display: none;
+    }
+    .footer .button{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .footer{
+        width: 87%;
+        display: block;
+    }
+}
+@media (max-width: 615px){
+    .footer{
+        width: 70%;
+    }
+}
+@media (max-width: 380px){ 
+    .footer{
+        display: block;
+    }
+    .footer .text h1{
+        font-size: 25px;
+    }
+    .footer .text p{
+        font-size: 18px;
+    }
+}
