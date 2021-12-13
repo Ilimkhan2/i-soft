@@ -596,7 +596,59 @@
             </div>
             <div class="button">
                 <h1>Онлайн заявка</h1>
-                <a href="#">Записаться</a>
+                <button onclick="showModal1(2)" href="#">Записаться</button>
+            </div>
+        </div>
+
+        <div class="modal modal-2">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <h3 class="title">
+                        МЫ СВЯЖЕМСЯ С ВАМИ КАК МОЖНО БЫСТРЕЕ!
+                    </h3>
+                    <div class="close" onclick="closeModal1(2)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__dialog">
+                        <form action="#">
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш имя</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш фамилия</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш отчество</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш номер телефон</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="cola">
+                                        <input type="submit" value="Отправить">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -664,6 +716,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function showModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.add('actvie')
+        }
+        function closeModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.remove('actvie')
+        }
     </script>
 </body>
 </html>

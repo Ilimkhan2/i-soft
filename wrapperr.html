@@ -56,7 +56,7 @@
                     <h6>Магазин / Lenovo</h6>
                     <h3 class="py-3">Ультрабук Lenovo ThinkPad X1 Yoga Gen 5 20UB0015US Intel</h3>
                     <h2>203820 сом</h2>
-                    <button data-modal-target="#modall" class="media">В корзину</button>
+                    <button data-modal-target="#modall" onclick="showModal1(1)" class="btn btn-primary">В корзину</button>
                     <a href="./arrange.html" class="button">Купить</a>
                     <div class="text">
                         <h4 class="mt-4 mb-4">Характеристики: <br>
@@ -95,28 +95,112 @@
             </div>
         </div>
         
-        <div class="modal" id="modall">
-            <div class="modal-weader">
-                <h1>Товар добавлен в корзину</h1>
-                <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-item">
-                <div class="modal__dialogw">
-                    <img src="./img/Lenovo.png">
-                    <div class="into">
-                        <h1>Ультрабук Lenovo ThinkPad X1 Yoga Gen 5 20UB0015US Intel</h1>
-                        <p>203820 сом</p>
-                        <div class="button">
-                            <a href="#" class="butex">Предолжить покупить</a>
-                            <a href="#" class="butex">В корзину</a>
+        <div class="modal modal-1">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <h3 class="title">
+                        Товар добавлен в корзину
+                    </h3>
+                    <div class="close" onclick="closeModal1(1)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__dialogw">
+                        <img src="./img/Lenovo.png">
+                        <div class="into">
+                            <h1>Ультрабук Lenovo ThinkPad X1 Yoga Gen 5 20UB0015US Intel</h1>
+                            <p>203820 сом</p>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button">
+                        <a href="#" class="butex">Предолжить покупить</a>
+                        <a href="#" class="butex">В корзину</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <footer id="contacts">
+        <div class="footer">
+            <div class="text">
+                <h1>Навигация</h1>
+                <a href="#"><p>Портфолио</p></a>
+                <a href="#"><p>Магазин</p></a>
+                <a href="#"><p>О нас</p></a>
+                <a href="#"><p>Блог</p></a>
+                <a href="#"><p>Сервис</p></a>
+            </div>
+            <div class="text">
+                <h1>Контакты</h1>
+                <p>(+996 772) 000-562</p>
+                <p>isoft@gmail.com</p>
+            </div>
+            <div class="text">
+                <h1>Соц сети</h1>
+                <a href="#"><p><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</p></a>
+                <a href="#"><p><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</p></a>
+                <a href="#"><p><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</p></a>
+            </div>
+            <div class="button">
+                <h1>Онлайн заявка</h1>
+                <button onclick="showModal1(2)" href="#">Записаться</button>
+            </div>
+        </div>
 
+        <div class="modal modal-2">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <h3 class="title">
+                        МЫ СВЯЖЕМСЯ С ВАМИ КАК МОЖНО БЫСТРЕЕ!
+                    </h3>
+                    <div class="close" onclick="closeModal1(2)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__dialog">
+                        <form action="#">
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш имя</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш фамилия</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш отчество</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text_span" name="" required="требуемый">
+                                        <span class="text_span">Ваш номер телефон</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="cola">
+                                        <input type="submit" value="Отправить">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -145,6 +229,14 @@
         function clickimg(smallIg){
             var fullImg = document.getElementById("imagebox");
             fullImg.src = smallIg.src
+        }
+    </script>
+    <script>
+        function showModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.add('actvie')
+        }
+        function closeModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.remove('actvie')
         }
     </script>
 </body>

@@ -252,39 +252,50 @@ li{
 
 .modal{
     position: fixed;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    background-color: #fff;
-    padding: 30px 30px;
-    border-radius: 5px;
-    width: 600px;
-    height: 350px;
-    max-width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.452);
-}
-.modal.active{
-    transform: translate(-50%, -50%) scale(1);
-}
-.modal-weader{
-    padding: 10px 15px 10px 0;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
 }
-.modal-weader h1{
+.modal.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modal .modal-window{
+    background: #fff;
+    width: 800px;
+    border-radius: 10px;
+}
+.modal .modal-header,
+.modal .modal-body{
+    margin: 2rem 2rem 0 2rem;
+}
+.modal .modal-footer{
+    position: relative;
+    bottom: 100px;
+}
+.modal .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal .modal-header .title{
+    margin: auto;
     font-size: 20px;
-    font-weight: 800;
-    margin-left: 136px;
 }
-.modal-weader .close-button{
+.modal .modal-header .close{
+    font-size: 3rem;
     cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 25px;
 }
 .modal__dialogw{
     width: auto;
@@ -309,15 +320,14 @@ li{
     font-size: 25px;
     margin-bottom: 15px;
 }
-.modal__dialogw .button{
+.modal-window .button{
     display: flex;
+    justify-content: flex-end;
 }
-.modal .modal__dialogw .button{
-    width: 100%;
-    margin: auto;
-    margin-left: 0;
+.modal .modal-window .button{
+    width: 92%;
 }
-.modal .modal__dialogw a{
+.modal .modal-window a{
     background: none;
     font-size: 14px;
     border: 1px solid #FF0000;
@@ -325,28 +335,187 @@ li{
     padding: 1rem 15px;
     border-radius: 5px;
     transition: all .3s ease;
-    margin: 0 10px;
+    margin: 0 5px;
 }
-.modal .modal__dialogw a:hover{
+.modal .modal-window a:hover{
     background: #FF0000;
     color: #fff;
     border: 1px solid #FF0000;
     transition: all .3s ease;
 }
 
+footer{
+    background: #FBECEC;
+}
+.footer{
+    width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.footer .text{
+    padding: 40px 15px;
+    margin-right: 150px;
+}
+.footer .text h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #382626;
+}
+.footer .text p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #38262680;
+}    
+.footer .text p i{
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.footer .button{
+    padding: 40px 15px;
+}
+.footer .button h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #382626;
+}
+.footer .button button{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 15px 35px;
+    background: #FF0000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modal__dialog{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.modal__dialog .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+.modal__dialog .row100 .col{
+    position: relative;
+    width: 97%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.modal__dialog .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;   
+    color: #999;
+}
+.modal__dialog .row100 .col .inputBox input{
+    position: absolute;
+    width: 96%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+    margin-left: -20.8rem;
+}
+.modal__dialog .row100 .col .inputBox .text_span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.modal__dialog .row100 .inputBox input:focus + .text_span,
+.modal__dialog .row100 .inputBox input:valid + .text_span{
+    top: -35px;
+    left: -10px;
+}
+.modal__dialog .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.modal__dialog .row100 .inputBox input:focus ~ .line,
+.modal__dialog .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+.modal__dialog .row100 .cola input{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    margin: 1rem 3rem;
+    cursor: pointer;
+    outline: none;
+    border:  1px solid #ff0000;
+    color: #ff0000;
+    padding: 1rem 2rem;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+.modal__dialog .row100 .cola input:hover{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #FF0000;
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+@media (max-width: 1230px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 1210px){
+    .container .wrapper{
+        height: auto;
+    }
+}
 @media (max-width: 1050px){
     .min-tilems .text a{
         font-size: 15px;
         margin-left: 10px;
     }
     .item{
-        max-width: 900px;
+        max-width: -webkit-fill-available;
         padding: 1rem 2rem;
     }
 }
 @media (max-width: 900px){
     .container .wrapper{
-        height: 185vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -364,18 +533,50 @@ li{
         font-size: 18px;
         margin-left: 20px;
     }
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 790px){
+    .footer{
+        width: 87%;
+    }
+    .modal .modal-window{
+        width: 650px;
+    }
+    .modal .modal__dialog{
+        width: 500px;
+    }
+    .modal .modal__dialog .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
 }
 @media (max-width: 650px){
     .modal{
         display: none;
     }
-    .modall{
+    .footer .button{
         display: none;
+    }
+    button{
+        display: none;
+    }
+    .footer{
+        width: 87%;
+        display: block;
+    }
+}
+@media (max-width: 615px){
+    .footer{
+        width: 70%;
     }
 }
 @media (max-width: 586px){
     .container .wrapper{
-        height: 190vh;
+        height: auto;
     }
     .container .wrapper .all-images{
         display: flex;
@@ -393,7 +594,7 @@ li{
         margin: auto;
     }
     .item{
-        max-width: 400px;
+        max-width: -webkit-fill-available;
     }
     .min-tilems .media{
         display: none;
@@ -401,26 +602,32 @@ li{
 }
 @media (max-width: 436px){
     .container .wrapper{
-        height: 230vh;
+        height: auto;
     }
     .min-tilems{
         width: 330px;
     }
     .item{
-        max-width: 400px;
         padding: 1rem 10px;
     }
     .container .wrapper .sall-images img{
         height: 16vh;
     }
 }
+@media (max-width: 380px){
+    .footer{
+        display: block;
+    }
+    .footer .text h1{
+        font-size: 25px;
+    }
+    .footer .text p{
+        font-size: 18px;
+    }
+}
 @media (max-width: 378px){
     .container .wrapper .sall-images img{
         height: 14vh;
-    }
-    .item{
-        max-width: 290px;
-        padding: 1rem 0;
     }
 }
 @media (max-width: 320px){

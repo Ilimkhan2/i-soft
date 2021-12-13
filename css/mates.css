@@ -148,21 +148,13 @@ li{
 .mates .mates-text{
     display: block;
     margin-bottom: 15px;
+    padding: 0 40px;
 }
 .mates .mates-text h1{
     position: relative;
     font-size: 42px;
     font-weight: 600;
     padding-bottom: 10px;
-}
-.mates .mates-text::before{
-    position: absolute;
-    content: '';
-    bottom: 75%;
-    left: 68px;
-    border: 4px solid #FF0000;
-    width: 20%;
-    border-radius: 10px;
 }
 .mates .text{
     display: flex;
@@ -324,10 +316,228 @@ footer{
     margin-bottom: 25px;
     color: #382626;
 }
-.footer .button a{
+.footer .button button{
+    border: none;
+    cursor: pointer;
     font-size: 19px;
     padding: 15px 35px;
     background: #FF0000;
     color: #fff;
     border-radius: 10px;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.modal.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modal .modal-window{
+    background: #fff;
+    width: 800px;
+    border-radius: 10px;
+}
+.modal .modal-header,
+.modal .modal-body{
+    margin: 2rem 2rem 0 2rem;
+}
+.modal .modal-footer{
+    position: relative;
+    bottom: 100px;
+}
+.modal .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal .modal-header .title{
+    margin: auto;
+    font-size: 20px;
+}
+.modal .modal-header .close{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1230px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 904px){
+    .mates .text{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 903px){
+    .mates .mates-text h1{
+        font-size: 25px;
+    }
+}
+@media (max-width: 900px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 803px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 790px){
+    .modal .modal-window{
+        width: 650px;
+    }
+    .modal .modal__dialogw{
+        width: 500px;
+    }
+    .modal .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
+    .mates .text img{
+        width: 10rem;
+    }
+    .footer{
+        width: 87%;
+    }
+}
+@media (max-width: 670px){
+    .modal{
+        display: none;
+    }
+    .footer .button{
+        display: none;
+    }
+    .mates .mates-text{
+        padding: 0%;
+    }
+    .modal__dialogw{
+        width: auto;
+    }
+    .mates{
+        padding: 100px 40px 40px 40px;
+    }
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -17.8rem;
+    }
+    .footer{
+        width: 87%;
+    }
+}
+@media (max-width: 650px){
+    .modal{
+        display: none;
+    }
+    .footer{
+        width: 87%;
+    }
+    .footer{
+        display: block;;
+    }
+}
+@media (max-width: 650px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -16.8rem;
+    }
+}
+@media (max-width: 615px){
+    .footer{
+        width: 70%;
+    }
+}
+@media (max-width: 614px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -15.8rem;
+    }
+}
+@media (max-width: 581px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
+}
+@media (max-width: 548px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -13.8rem;
+    }
+}
+@media (max-width: 510px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -12.8rem;
+    }
+}
+@media (max-width: 479px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -11.8rem;
+    }
+}
+@media (max-width: 445px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -10.8rem;
+    }
+}
+@media (max-width: 444px){
+    .modal__dialogw .row100 .col .inputBox .text_span{
+        font-size: 12px;
+    }
+}
+@media (max-width: 416px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -9.8rem;
+    }
+}
+@media (max-width: 385px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -8.8rem;
+    }
+}
+@media (max-width: 380px){
+    .footer{
+        display: block;
+    }
+    .footer .text h1{
+        font-size: 25px;
+    }
+    .footer .text p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 363px){
+    .modal__dialogw .row100 .cola input{
+        margin: 1rem 0;
+    }
+}
+@media (max-width: 345px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -7.8rem;
+    }
+}
+@media (max-width: 312px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -6.8rem;
+    }
 }
