@@ -195,7 +195,52 @@
             </div>
             <div class="button">
                 <h1>Онлайн заявка</h1>
-                <a href="#">Записаться</a>
+                <button onclick="showModal1(1)" href="#">Записаться</button>
+            </div>
+        </div>
+        
+        <div class="modal modal-1">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <h3 class="title">
+                        МЫ СВЯЖЕМСЯ С ВАМИ КАК МОЖНО БЫСТРЕЕ!
+                    </h3>
+                    <div class="close" onclick="closeModal1(1)">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__dialogw">
+                        <form action="#">
+                            <div class="row100">
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text" name="name" id="username" required>
+                                        <span  class="text_span">Ваш имя</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="email" name="email" id="email" required>
+                                        <span class="text_span">Ваш почта</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inputBox">
+                                        <input type="text" name="message"  id="message" required>
+                                        <span class="text_span">Сообщенийе</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="cola">
+                                        <input type="submit" value="Отправить">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -218,6 +263,14 @@
         }
         window.onscroll = () =>{
             this.scrollY > 20 ? navBer.classList.add("actcve") : navBer.classList.remove("actcve");
+        }
+    </script>
+    <script>
+        function showModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.add('actvie')
+        }
+        function closeModal1(id){
+            document.getElementsByClassName(`modal-${id}`)[0].classList.remove('actvie')
         }
     </script>
 </body>

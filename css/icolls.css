@@ -209,7 +209,7 @@ li{
 }
 .modal__dialogw .row100 .col .inputBox input{
     position: absolute;
-    width: 96%;
+    width: 97%;
     height: 100%;
     background: transparent;
     box-shadow: none;
@@ -219,7 +219,7 @@ li{
     padding: 0 10px;
     z-index: 1;
     color: #fff;
-    margin-left: -20.8rem;
+    margin-left: -21.2rem;
 }
 .modal__dialogw .row100 .col .inputBox .text_span{
     position: absolute;
@@ -354,7 +354,7 @@ footer{
 }
 .modal .modal-header,
 .modal .modal-body{
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem 2rem 2rem 2rem;
 }
 .modal .modal-footer{
     position: relative;

@@ -261,12 +261,193 @@ footer{
     margin-bottom: 25px;
     color: #382626;
 }
-.footer .button a{
+.footer .button button{
+    border: none;
+    cursor: pointer;
     font-size: 19px;
     padding: 15px 35px;
     background: #FF0000;
     color: #fff;
     border-radius: 10px;
+}
+.mates{
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 40px 40px 0;
+}
+.mates .mates-text{
+    display: block;
+    margin-bottom: 15px;
+    padding: 0 40px;
+}
+.mates .mates-text h1{
+    position: relative;
+    font-size: 42px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.mates .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.mates .text img{
+    width: 15%;
+}
+.mates .text h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 25px;
+}
+.mates .text p{
+    color: #FF0000;
+    font-weight: 900;
+    font-size: 22px;
+}
+.wrapper .text_p{
+    text-align: center;
+}
+.wrapper .text_p p{
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+}
+.modal__dialogw{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.modal__dialogw .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+.modal__dialogw .row100 .col{
+    position: relative;
+    width: 97%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.modal__dialogw .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;   
+    color: #999;
+}
+.modal__dialogw .row100 .col .inputBox input{
+    position: absolute;
+    width: 97%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+    margin-left: -21.2rem;
+}
+.modal__dialogw .row100 .col .inputBox .text_span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.modal__dialogw .row100 .inputBox input:focus + .text_span,
+.modal__dialogw .row100 .inputBox input:valid + .text_span{
+    top: -35px;
+    left: -10px;
+}
+.modal__dialogw .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.modal__dialogw .row100 .inputBox input:focus ~ .line,
+.modal__dialogw .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+.modal__dialogw .row100 .cola input{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    margin: 1rem 3rem;
+    cursor: pointer;
+    outline: none;
+    border:  1px solid #ff0000;
+    color: #ff0000;
+    padding: 1rem 2rem;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+.modal__dialogw .row100 .cola input:hover{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #FF0000;
+    transition: all .3s ease;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.modal.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modal .modal-window{
+    background: #fff;
+    width: 800px;
+    border-radius: 10px;
+}
+.modal .modal-header,
+.modal .modal-body{
+    margin: 2rem 2rem 2rem 2rem;
+}
+.modal .modal-footer{
+    position: relative;
+    bottom: 100px;
+}
+.modal .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal .modal-header .title{
+    margin: auto;
+    font-size: 20px;
+}
+.modal .modal-header .close{
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 
@@ -277,6 +458,16 @@ footer{
     }
     .footer .text{
         margin-right: 60px;
+    }
+}
+@media (max-width: 904px){
+    .mates .text{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 903px){
+    .mates .mates-text h1{
+        font-size: 25px;
     }
 }
 @media (max-width: 900px){
@@ -290,19 +481,93 @@ footer{
         margin-right: 60px;
     }
 }
+@media (max-width: 803px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
 @media (max-width: 790px){
+    .modal .modal-window{
+        width: 650px;
+    }
+    .modal .modal__dialogw{
+        width: 500px;
+    }
+    .modal .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
+    .mates .text img{
+        width: 10rem;
+    }
+    .footer{
+        width: 87%;
+    }
+}
+@media (max-width: 670px){
+    .modal{
+        display: none;
+    }
+    .footer .button{
+        display: none;
+    }
+    .mates .mates-text{
+        padding: 0%;
+    }
+    .modal__dialogw{
+        width: auto;
+    }
+    .mates{
+        padding: 100px 40px 40px 40px;
+    }
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -17.8rem;
+    }
     .footer{
         width: 87%;
     }
 }
 @media (max-width: 650px){
+    .modal{
+        display: none;
+    }
     .footer{
         width: 87%;
+    }
+    .footer{
+        display: block;;
+    }
+}
+@media (max-width: 650px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -16.8rem;
     }
 }
 @media (max-width: 615px){
     .footer{
         width: 70%;
+    }
+}
+@media (max-width: 614px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -15.8rem;
+    }
+}
+@media (max-width: 581px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
+}
+@media (max-width: 548px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -13.8rem;
+    }
+}
+@media (max-width: 510px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -12.8rem;
     }
 }
 @media (max-width: 500px){
@@ -315,12 +580,22 @@ footer{
         font-size: 16px;
     }
 }
+@media (max-width: 479px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -11.8rem;
+    }
+}
 @media (max-width: 460px){
     .blog .contaier .card .into h1{
         font-size: 18px;
     }
     .blog .contaier .card .into .button{
         margin-left: 50px;
+    }
+}
+@media (max-width: 445px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -10.8rem;
     }
 }
 @media (max-width: 450px){
@@ -362,12 +637,22 @@ footer{
         font-size: 18px;
     }
 }
+@media (max-width: 444px){
+    .modal__dialogw .row100 .col .inputBox .text_span{
+        font-size: 12px;
+    }
+}
 @media (max-width: 427px){
     .shop .contaier .care{
         height: 290px;
     }
     .shop .contaier .care .info h1{
         font-size: 19px;
+    }
+}
+@media (max-width: 416px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -9.8rem;
     }
 }
 @media (max-width: 400px){
@@ -381,13 +666,12 @@ footer{
         margin-left: 50px;
     }
 }
+@media (max-width: 385px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -8.8rem;
+    }
+}
 @media (max-width: 380px){
-    .blog .contaier .card .absolute .calendar{
-        margin-left: 17vh;
-    }
-    .blog .contaier .card .into .button{
-        margin-left: 55px;
-    }
     .footer{
         display: block;
     }
@@ -398,7 +682,11 @@ footer{
         font-size: 18px;
     }
 }
-
+@media (max-width: 363px){
+    .modal__dialogw .row100 .cola input{
+        margin: 1rem 0;
+    }
+}
 @media (max-width: 350px){
     .blog .contaier .card .into{
         width: -webkit-fill-available;
@@ -413,6 +701,11 @@ footer{
         margin-left: 50px;
     }
 }
+@media (max-width: 345px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -7.8rem;
+    }
+}
 @media (max-width: 330px){
     .blog .contaier .card .into{
         width: 261px;
@@ -420,6 +713,11 @@ footer{
     .blog .contaier .card .into .button{
         padding: 10px 30px;
         margin-left: 60px;
+    }
+}
+@media (max-width: 312px){
+    .modal__dialogw .row100 .col .inputBox input{
+        margin-left: -6.8rem;
     }
 }
 @media (max-width: 310px){
