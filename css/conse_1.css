@@ -113,6 +113,7 @@ li{
 }
 
 
+
 .wrapper{
     width: 1150px;
     margin: auto;
@@ -170,6 +171,7 @@ li{
 }
 .wrapper .text_p ul{
     padding: 0 20px;
+    margin-bottom: 15px;
 }
 .wrapper .text_p ul li{
     line-height: 28px;
@@ -178,7 +180,7 @@ li{
 }
 .wrapper .text_p img{
     width: 100%;
-    box-sizing: 5px;
+    border-radius: 5px;
     box-shadow: 0 0 5px rgb(0 0 0 / 50%);
     margin-bottom: 9px;
 }
