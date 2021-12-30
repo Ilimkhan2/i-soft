@@ -155,7 +155,7 @@ li{
  .min-tilems .py-3{
     position: relative;
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 800;
     margin: 1rem 0;
 }
  .min-tilems .py-3::after{
@@ -585,7 +585,7 @@ footer{
     .container .wrapper .sall-images{
         display: flex;
         flex-direction: initial;
-        margin-left: 25px;
+        margin-left: 15px;
     }
     .min-tilems .text a{
         display: none;

@@ -501,8 +501,12 @@ footer{
     }
 }
 @media (max-width: 444px){
+    .mates .text h1{
+        text-align: center;
+        margin-right: 0;
+    }
     .modal__dialogw .row100 .col .inputBox .text_span{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 @media (max-width: 416px){

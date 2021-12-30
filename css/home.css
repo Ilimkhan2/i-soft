@@ -708,7 +708,7 @@ footer{
 }
 @media (max-width: 330px){
     .blog .contaier .card .into{
-        width: 261px;
+        width: -webkit-fill-available;
     }
     .blog .contaier .card .into .button{
         padding: 10px 30px;
