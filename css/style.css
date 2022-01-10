@@ -279,11 +279,29 @@ li{
     justify-content: center;
     flex-wrap: wrap;
 }
+.shop .contaier .t_text{
+    max-width: 700px;
+}
+.shop .contaier .t_text h1{
+    font-size: 35px;
+    color: #FF0000;
+    padding: 15px 0;
+}
+.shop .contaier .t_text h2{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 0 9px;
+}
+.shop .contaier .t_text .hee{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 0 35px 0;
+}
 .shop .contaier .care {
     position: relative;
     width: 320px;
     height: 360px;
-    margin: 15px;
+    margin: 20px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -419,6 +437,21 @@ li{
     background: #fff;
     transition: all .3s ease;
     color: #000;
+}
+.shop .button_aa{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.shop .button_aa:hover{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #FF0000;
+    transition: all .3s ease;
 }
 
 
@@ -865,8 +898,14 @@ footer{
     .loader{
         left: calc(25vw - 75px);
     }
-    #menu{
-        width: 100%;
+    .shop .contaier .t_text h1{
+        font-size: 25px;
+    }
+    .shop .contaier .t_text h2{
+        font-size: 16px;
+    }
+    .shop .contaier .t_text .hee{
+        font-size: 16px;
     }
     .blog .text{
         width: 100%;
@@ -990,6 +1029,9 @@ footer{
     .blog .contaier{
         padding: 0;
     }
+    .shop .button_aa{
+        margin-left: 7rem;
+    }
 }
 @media (max-width: 480px){
     .blog .contaier .card .into h1{
@@ -1032,8 +1074,8 @@ footer{
     .shop .contaier .care .info .icon-text .button p{
         font-size: 17px;
     }
-    #menu li a{
-        padding: 4px 8px;
+    .shop .button_aa{
+        margin-left: 5rem;
     }
 }
 @media (max-width: 449px){
@@ -1102,6 +1144,9 @@ footer{
     .footer .text p{
         font-size: 18px;
     }
+    .shop .button_aa{
+        margin-left: 3rem;
+    }
 }
 @media (max-width: 350px){
     .loader{
@@ -1129,6 +1174,9 @@ footer{
     .service .contaier .card{
         height: 350px;
     }
+    .shop .button_aa{
+        margin-left: 2rem;
+    }
 }
 @media (max-width: 330px){
     .loader{
@@ -1145,6 +1193,9 @@ footer{
     .service .text p{
         font-size: 14px;
     }
+    .shop .contaier .t_text h1{
+        font-size: 20px;
+    }
 }
 @media (max-width: 310px){
     .loader{
@@ -1158,6 +1209,9 @@ footer{
     }
     .blog .contaier .card .into .button{
         margin-left: 10px;
+    }
+    .shop .button_aa{
+        margin-left: 1rem;
     }
 }
 

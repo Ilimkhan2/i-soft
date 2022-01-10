@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inclusive soft</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Магазин</title>
     <link rel="short icon" href="./img/isoft.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/iandex.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +14,6 @@
 </head>
 <body>
     <header>
-        <div class="loader_bg">
-            <h1 class="loader"><span>Inclusive</span> soft</h1> 
-        </div>
-
         <nav class="navber">
             <div class="content">
                 <div class="logo">
@@ -34,13 +29,7 @@
                     <div class="icon cancel-ber">
                         <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
-                    <li><a href="#index">Главная</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#shop">Магазин</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#blog">Блог</a></li>
-                    <li><a href="#service">Сервис</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="./index.html">Назад</a></li>
                 </ul>
                 <div class="icon menu-ber">
                     <i class="fa fa-align-right" aria-hidden="true"></i>
@@ -49,59 +38,16 @@
         </nav>
     </header>
 
-    <section id="index">
-        <div class="banne" id="banne">
-            <div class="text">
-                <h1>lsoft - команда, которая помогает клиентам определить задачи проекта, надежно его</h1>
-                <p>Мы - isoft</p>
-            </div>
-        </div>
-    </section>
-
-    
-    <section>
-        <div class="portfolio" id="portfolio">
-            <div data-aos="fade-down" class="portfolio-text">
-                <h1>Портфолио</h1>
-                <a href="course_1.html"><p>Все курсы</p></a>
-            </div>
-            <div class="contaier">
-                <div data-aos="fade-up" class="card">
-                    <a href="https://theme-land.com/apolo/?i=92485&aff=entheos"><img src="./img/Rectangle 294.jpg" alt=""></a>
-                </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="https://smartdatawp.com/motodeal/motodeal_intro/"><img src="./img/Rectangle 294-1.jpg" alt=""></a>
-                </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="https://droitthemes.com/wp/appland/demo6/"><img src="./img/Rectangle 294-2.jpg" alt=""></a>
-                </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="https://preview.themeforest.net/item/kidzo-kids-children-wordpress-theme/full_screen_preview/29355987?_ga=2.74627280.355713776.1624795711-1284497922.1574151945&irgwc=1&clickid=WvmUKKyKvxyLRJswUx0Mo3QGUkB157V4DRSTVI0&iradid=275988&irpid=2622947&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_2622947&utm_medium=affiliate&utm_source=impact_radius"><img src="./img/Rectangle 294-3.jpg" alt=""></a>
-                </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="https://droitthemes.com/wp/appland/demo4/"><img src="./img/Rectangle 294-4.jpg" alt=""></a>
-                </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="https://cv-worker-portfolio.weblium.site"><img src="./img/Rectangle 294-5.jpg" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section id="shop">
-        <div class="shop" id="portfolie">
-            <div data-aos="fade-down" class="shop-text">
-                <h1>Магазин</h1>
-            </div>
+        <div class="shop">
+            <ul data-aos="zoom-in" id="menu">
+                <li><a data-target="all" class="active" href="#portfolie">Всё</a></li>
+                <li><a data-target="Lenovo" href="#portfolie">Lenovo</a></li>
+                <li><a data-target="Asus" href="#portfolie">Asus</a></li>
+                <li><a data-target="MSI" href="#portfolie">MSI</a></li>
+            </ul>
 
             <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="contaier">
-                <div class="t_text">
-                    <p>с 9:00 до 19:00 ежедневно</p>
-                    <h1>МАГАЗИН НОУТБУКОВ В БИШКЕКЕ</h1>
-                    <h2>Инструмент - без которого нет развития в наше в время!</h2>
-                    <h2 class="hee">Интернет-магазин (англ. online shop или e-shop) — сайт, торгующий товарами посредством сети Интернет. Позволяет пользователям онлайн, в своём браузере или через мобильное приложение, сформировать заказ на покупку, выбрать способ оплаты и доставки заказа, оплатить заказ.</h2>
-                    <a class="button_aa" href="./iandex.html">Быстрый просмотр</a>
-                </div>
                 <div class="care Lenovo">
                     <span></span>
                     <div class="imgBx"><img src="./img/Lenovo.png"></div>
@@ -130,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="care Lenovo">
+                <div class="care Lenovo">
                     <span></span>
                     <div class="imgBx"><img src="./img/Lenovo.png"></div>
                     <div class="content">
@@ -438,140 +384,12 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="about">
-        <div class="about">
-            <div data-aos="fade-down" class="about-text">
-                <h1>О нас</h1>
-            </div>
-            <div data-aos="fade-up" class="text">
-               <h1><span>ОсОО "ИнклюзивСофт"</span> , является первой в стране инклюзивной IT-компанией, где помимо здоровых людей, работают люди с ограниченными возможностями здоровья (ЛОВЗ). В нашей компании трудовую и профессиональную реабилитацию проходят люди с ДЦП, колясочники, слабовидящие, слабослышащие, и с синдромом аутизма, выпускники IT Academy при КАРПОУ, Института электроники и телекоммуникаций при КГТУ, Колледжа экономики, дизайна и информационных технологий и т.д. Также по мере своих возможностей, наша компания оказывает поддержку и содействие в вопросах получения образования и трудоустройства ЛОВЗ, заботится об улучшении социально - экономического положения ЛОВЗ.</h1>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog">
-        <div class="blog">
-            <div data-aos="fade-down" class="blog-text">
-                <h1>Новостой блог</h1>
-            </div>
-            <div data-aos="fade-up" class="text">
-                <h1>ПРОГРАММИРОВАНИЕ</h1>
-                <p>Программирование – сложное направление диджитал. Понимая это, мы создали специальный раздел блога, в котором рассказываем о разных языках программирования, методах их использования и обучения выбранным направлениям разработки.</p>
-            </div>
-            <div class="contaier">
-                <div data-aos="fade-up" class="card">
-                    <a href="#">
-                        <img src="./img/image 38.png">
-                        <div class="absolute">
-                            <p class="eye"><i class="fa fa-eye" aria-hidden="true"></i>2454</p>
-                            <p class="calendar"><i class="fa fa-calendar" aria-hidden="true"></i>14/04/2021</p>
-                        </div>
-                        <div class="into">
-                            <p>Программирование</p>
-                            <h1>Курс Frontend разработки
-                                с нуля в Бишкеке
-                            </h1>
-                            <a class="button" href="#">Подробнее...</a>
-                        </div>
-                    </a>
                 </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="#">
-                        <img src="./img/image 38-1.png">
-                        <div class="absolute">
-                            <p class="eye"><i class="fa fa-eye" aria-hidden="true"></i>2454</p>
-                            <p class="calendar"><i class="fa fa-calendar" aria-hidden="true"></i>14/04/2021</p>
-                        </div>
-                        <div class="into">
-                            <p>Программирование</p>
-                            <h1>Как сделать приложение на Android без кода</h1>
-                            <a class="button" href="#">Подробнее...</a>
-                        </div>
-                    </a>
-                </div>
-                <div data-aos="fade-up" class="card">
-                    <a href="#">
-                        <img src="./img/image 38-2.png">
-                        <div class="absolute">
-                            <p class="eye"><i class="fa fa-eye" aria-hidden="true"></i>2454</p>
-                            <p class="calendar"><i class="fa fa-calendar" aria-hidden="true"></i>14/04/2021</p>
-                        </div>
-                        <div class="into">
-                            <p>Программирование</p>
-                            <h1>Кто хочет изучить программирование</h1>
-                            <a class="button" href="#">Подробнее...</a>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div data-aos="fade-up" class="button-scoll">
-                <a href="./home.html">Все новости</a>
             </div>
         </div>
     </section>
 
 
-    <section id="service">
-        <div class="service">
-            <div data-aos="fade-up" class="service-text">
-                <h1>Сервис</h1>
-            </div>
-            <div data-aos="fade-up" class="text">
-               <h1>РЕМОНТ</h1>
-               <p>Ремонт и обслуживание оргтехники — хоть и не основное, но всё же немаловажное направление услуг сервисного центра iSoft</p>
-               <p>Наши инженеры выполняют ремонт большинства принтеров и негабаритной оргтехники. Большой опыт позволяет решать даже самые сложные проблемы в кратчайшие сроки, а лояльный подход к клиентам делает ремонт не только качественным, но и выгодным!</p>
-            </div>
-            <div class="contaier">
-                <div data-aos="fade-up" class="flex">
-                    <div  class="card">
-                        <a href="#">
-                            <img src="./img/Rectangle 290.jpg">
-                            <div class="into">
-                                <h1>Заправка Принтера</h1>
-                                <p>(+996 772) 000-562</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                            <img src="./img/Rectangle 294 (2).png">
-                            <div class="into">
-                                <h1>Установка ПО Windows антивирус</h1>
-                                <p>(+996 772) 000-562</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" class="flex">
-                    <div class="card">
-                        <a href="#">
-                            <img src="./img/Rectangle 294 (1).png">
-                            <div class="into">
-                                <h1>Быстрая и качественное обслуживание</h1>
-                                <p>(+996 772) 000-562</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                            <img src="./img/Rectangle 294.png">
-                            <div class="into">
-                                <h1>Компьютер и ноутбук</h1>
-                                <p>(+996 772) 000-562</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer id="contacts">
         <div class="footer">
@@ -596,17 +414,17 @@
             </div>
             <div class="button">
                 <h1>Онлайн заявка</h1>
-                <button onclick="showModal1(2)" href="#">Записаться</button>
+                <button onclick="showModal1(1)" href="#">Записаться</button>
             </div>
         </div>
 
-        <div class="modal modal-2">
+        <div class="modal modal-1">
             <div class="modal-window">
                 <div class="modal-header">
                     <h3 class="title">
                         МЫ СВЯЖЕМСЯ С ВАМИ КАК МОЖНО БЫСТРЕЕ!
                     </h3>
-                    <div class="close" onclick="closeModal1(2)">&times;</div>
+                    <div class="close" onclick="closeModal1(1)">&times;</div>
                 </div>
                 <div class="modal-body">
                     <div class="modal__dialog">
@@ -648,28 +466,12 @@
 
 
 
-    
-
-
-
-
 
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
-
-    <script src="./js/three.min.js"></script>
-    <script src="./js/vanta.waves.min.js"></script>
-    <script src="./js/add.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1100);
-    </script>
 
     <script>
         const navBer = document.querySelector(".navber");
@@ -689,22 +491,6 @@
             this.scrollY > 20 ? navBer.classList.add("actcve") : navBer.classList.remove("actcve");
         }
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $('.care').on('mouseenter',function(e){
-                x = e.pageX - $(this).offset().left,
-                y = e.pageY - $(this).offset().top,
-                $(this).find('span').css({top:y, left:x});
-            }); 
-            $('.care').on('mouseout',function(e){
-                x = e.pageX - $(this).offset().left,
-                y = e.pageY - $(this).offset().top,
-                $(this).find('span').css({top:y, left:x});
-            });
-        });
-    </script> 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

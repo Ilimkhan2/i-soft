@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #FFF;
+}
+html::-webkit-scrollbar-thumb{
+    background: #FF0000;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+
+.navber .content{
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navber{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    padding: 5px 0;
+    background: #fff;
+    transition: all .3s ease;
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+}
+.navber.actcve{
+    padding: 25px 0;
+    transition: all .3s ease;
+}
+.navber .content .logo img{
+    width: 10%;
+}
+.navber .content .logo a{
+    display: flex;
+    align-items: center;
+}
+.navber .content .logo a .logo-text{
+    padding: 0 10px;
+}
+.navber .content .logo a .logo-text h2{
+    font-weight: 500;
+    color: #393939;
+    font-size: 22px;
+}
+.navber .content .logo a .logo-text p{
+    font-weight: 500;
+    color: #393939;
+    font-size: 10px;
+}
+.navber .content .menu-lier{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 200px;
+    height: 100vh;
+    margin-top: 0;
+    padding: 30px 40px;
+    text-align: left;
+    transition: all .3s ease;
+    background: #fff;
+    border-top: 1px solid #FF0000 ;
+}
+.navber .content .menu-lier.sticve{
+    right: 0%;
+}
+.navber .content .menu-lier li{
+    margin-top: 45px;
+}
+.navber .content .menu-lier li a{
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+.navber .content .menu-lier li a:hover{
+    color: #FF0000;
+    transition: all .3s ease;
+}
+.icon{
+    font-size: 21px;
+    color: #000;
+    cursor: pointer;
+}
+.icon.cancel-ber{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.icon.hide{
+    display: none;
+}
+
+
+
+#menu{
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    padding: 100px 100px 20px;
+}
+#menu li{
+    display: inline-flex;
+}
+#menu li .active{
+    color: #FF0000;
+}
+#menu li a{
+    padding: 4px 20px ;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    transition: all .3s ease;
+}
+#menu li a:hover{
+    color: #FF0000;
+    transition: all .3s ease;
+}
+.shop .contaier{
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.shop .contaier .care {
+    position: relative;
+    width: 320px;
+    height: 360px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.shop .contaier .care span {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    opacity: 0.95;
+    background: #FF0033;
+    z-index: 1;
+    transition: all .5s ease;
+    transform: translate(-50%, -50%);
+}
+.shop .contaier .care:hover span {
+    width: 1000px;
+    height: 1000px;
+    transition: all .5s ease;
+}
+.shop .contaier .care .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 360px;
+}
+.shop .contaier .care .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shop .contaier .care .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.shop .contaier .care .content .info {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    transition: .2s;
+    transform: translateY(50px);
+    visibility: hidden;
+    opacity: 0;
+}
+.shop .contaier .care:hover .content .info {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.shop .contaier .care .info h1{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contaier .care .info .icon{
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 33px;
+}
+.shop .contaier .care .info .icon::before{
+    position: absolute;
+    content: '';
+    top: 40px;
+    left: 0;
+    border-bottom: 1px solid #D6D8E5;
+    width: 100%;
+}
+.shop .contaier .care .info .icon .star {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.shop .contaier .care .info .icon .star .fa-star{
+    font-size: 18px;
+    color: #f3ba2b;
+    cursor: pointer;
+}
+.shop .contaier .care .info .icon p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+.shop .contaier .care .info .icon-text{
+    display: flex;
+    align-items: center;
+}
+.shop .contaier .care .info .icon-text .user{
+    margin-right: 25px;
+}
+.shop .contaier .care .info .icon-text .user .fa-user-o{
+    margin-right: 10px;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+.shop .contaier .care .info .icon-text .user p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+.shop .contaier .care .info .icon-text .button{
+    display: flex;
+    align-items: center;
+}
+.shop .contaier .care .info .icon-text .button p{
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
+.shop .contaier .care .info .icon-text .button .button_a{
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.shop .contaier .care .info .icon-text .button .button_a:hover{
+    background: #fff;
+    transition: all .3s ease;
+    color: #000;
+}
+
+
+
+footer{
+    background: #FBECEC;
+}
+.footer{
+    width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.footer .text{
+    padding: 40px 15px;
+    margin-right: 150px;
+}
+.footer .text h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #382626;
+}
+.footer .text p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #38262680;
+}    
+.footer .text p i{
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.footer .button{
+    padding: 40px 15px;
+}
+.footer .button h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #382626;
+}
+.footer .button button{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 15px 35px;
+    background: #FF0000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.modal.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modal .modal-window{
+    background: #fff;
+    width: 800px;
+    border-radius: 10px;
+}
+.modal .modal-header,
+.modal .modal-body{
+    margin: 2rem 2rem 2rem 2rem;
+}
+.modal .modal-footer{
+    position: relative;
+    bottom: 100px;
+}
+.modal .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal .modal-header .title{
+    margin: auto;
+    font-size: 20px;
+}
+.modal .modal-header .close{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.modal__dialog{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.modal__dialog .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+.modal__dialog .row100 .col{
+    position: relative;
+    width: 97%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.modal__dialog .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;   
+    color: #999;
+}
+.modal__dialog .row100 .col .inputBox input{
+    position: absolute;
+    width: 97%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+    margin-left: -21.2rem;
+}
+.modal__dialog .row100 .col .inputBox .text_span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.modal__dialog .row100 .inputBox input:focus + .text_span,
+.modal__dialog .row100 .inputBox input:valid + .text_span{
+    top: -35px;
+    left: -10px;
+}
+.modal__dialog .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.modal__dialog .row100 .inputBox input:focus ~ .line,
+.modal__dialog .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+.modal__dialog .row100 .cola input{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    margin: 1rem 3rem;
+    cursor: pointer;
+    outline: none;
+    border:  1px solid #ff0000;
+    color: #ff0000;
+    padding: 1rem 2rem;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+.modal__dialog .row100 .cola input:hover{
+    background: #FF0000;
+    color: #fff;
+    border: 1px solid #FF0000;
+    transition: all .3s ease;
+}
+
+
+@media (max-width: 1230px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 960px){
+    #menu{
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+    .footer{
+        width: 91%;
+    }
+    .footer .text{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 790px){
+    .footer{
+        width: 87%;
+    }
+    .modal .modal-window{
+        width: 650px;
+    }
+    .modal .modal__dialog{
+        width: 500px;
+    }
+    .modal .modal__dialog .row100 .col .inputBox input{
+        margin-left: -14.8rem;
+    }
+}
+@media (max-width: 650px){
+    #menu li a{
+        font-size: 20px;
+    }
+    .modal{
+        display: none;
+    }
+    .footer .button{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .footer{
+        width: 87%;
+        display: block;
+    }
+}
+@media (max-width: 615px){
+    .footer{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px){
+    .shop .contaier{
+        padding: 0;
+    }
+    .shop .contaier .care .imgBx{
+        width: 316px;
+        height: 310px;
+    }
+}
+@media (max-width: 450px){
+    .shop .contaier .care .imgBx img{
+        height: 85%;
+    }
+    .shop .contaier .care .info .icon .star{
+        margin-left: 5px;
+    }
+    .shop .contaier .care .info .icon-text .user{
+        margin-right: 0;
+    }
+    .shop .contaier .care .info .icon-text .user p{
+        display: none;
+    }
+    .shop .contaier .care .info .icon-text .button{
+        display: block;
+    }
+    .shop .contaier .care .info .icon-text .button p{
+        font-size: 17px;
+    }
+    #menu li a{
+        padding: 4px 8px;
+    }
+}
+@media (max-width: 449px){
+    .contaier .care .info .icon{
+        display: none;
+    }
+    .shop .contaier .care .info .icon-text{
+        display: block;
+        text-align: center;
+    }
+    .shop .contaier .care .info .icon-text .button p{
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+    .shop .contaier .care .info .icon-text .button .button_a{
+        font-size: 18px;
+    }
+    #menu li a{
+        padding: 4px 5px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 427px){
+    .shop .contaier .care{
+        height: 290px;
+    }
+    .shop .contaier .care .info h1{
+        font-size: 19px;
+    }
+}
+@media (max-width: 400px){
+    .shop .contaier .care .imgBx{
+        width: 100%;
+    }
+}
+@media (max-width: 380px){
+    .footer{
+        display: block;
+    }
+    .footer .text h1{
+        font-size: 25px;
+    }
+    .footer .text p{
+        font-size: 18px;
+    }
+}
