@@ -466,7 +466,7 @@
             </div>
             <div class="contaier">
                 <div data-aos="fade-up" class="card">
-                    <a href="#">
+                    <a href="#card">
                         <img src="./img/image 38.png">
                         <div class="absolute">
                             <p class="eye"><i class="fa fa-eye" aria-hidden="true"></i>2454</p>
@@ -477,12 +477,12 @@
                             <h1>Курс Frontend разработки
                                 с нуля в Бишкеке
                             </h1>
-                            <a class="button" href="#">Подробнее...</a>
+                            <button onclick="showModal1(1)" >Подробнее...</button>
                         </div>
                     </a>
                 </div>
                 <div data-aos="fade-up" class="card">
-                    <a href="#">
+                    <a href="#card">
                         <img src="./img/image 38-1.png">
                         <div class="absolute">
                             <p class="eye"><i class="fa fa-eye" aria-hidden="true"></i>2454</p>
@@ -491,12 +491,12 @@
                         <div class="into">
                             <p>Программирование</p>
                             <h1>Как сделать приложение на Android без кода</h1>
-                            <a class="button" href="#">Подробнее...</a>
+                            <button onclick="showModal1(2)">Подробнее...</button>
                         </div>
                     </a>
                 </div>
                 <div data-aos="fade-up" class="card">
-                    <a href="#">
+                    <a href="#card">
                         <img src="./img/image 38-2.png">
                         <div class="absolute">
                             <p class="eye"><i class="fa fa-eye" aria-hidden="true"></i>2454</p>
@@ -505,9 +505,51 @@
                         <div class="into">
                             <p>Программирование</p>
                             <h1>Кто хочет изучить программирование</h1>
-                            <a class="button" href="#">Подробнее...</a>
+                            <button onclick="showModal1(3)">Подробнее...</button>
                         </div>
                     </a>
+                </div>
+
+
+                <div class="modal modall modal-1">
+                    <div class="modall-window">
+                        <div class="modall-header">
+                            <p>
+                                Получите профессию за 3 месяцев под руководством опытного наставника.
+                                После курса – трудоустройство в IT компании или стажировка
+                            </p>
+                            <div class="closee" onclick="closeModal1(1)">&times;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modall modal-2">
+                    <div class="modall-window">
+                        <div class="modall-header">
+                            <p>
+                                Рассказываем, какие знания и инструменты нужны для разработки android-приложений и даём пошаговую инструкцию
+                            </p>
+                            <div class="closee" onclick="closeModal1(2)">&times;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal modall modal-3">
+                    <div class="modall-window">
+                        <div class="modall-header">
+                            <p>
+                                ✅Обучаться у практикующих разработчиков, <br>
+                                ✅Создать своё портфолио <br>
+                                ✅Устроится на лучшую работу <br>
+                                
+                                Что будет на курсе? <br>
+                                
+                                ✅Back-end разработка, <br>
+                                ✅Программирование на Python <br>
+                            </p>
+                            <div class="closee" onclick="closeModal1(3)">&times;</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div data-aos="fade-up" class="button-scoll">
@@ -596,17 +638,17 @@
             </div>
             <div class="button">
                 <h1>Онлайн заявка</h1>
-                <button onclick="showModal1(2)" href="#">Записаться</button>
+                <button onclick="showModal1(4)" href="#">Записаться</button>
             </div>
         </div>
 
-        <div class="modal modal-2">
+        <div class="modal modal-4">
             <div class="modal-window">
                 <div class="modal-header">
                     <h3 class="title">
                         МЫ СВЯЖЕМСЯ С ВАМИ КАК МОЖНО БЫСТРЕЕ!
                     </h3>
-                    <div class="close" onclick="closeModal1(2)">&times;</div>
+                    <div class="close" onclick="closeModal1(4)">&times;</div>
                 </div>
                 <div class="modal-body">
                     <div class="modal__dialog">

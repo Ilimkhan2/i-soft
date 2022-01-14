@@ -574,7 +574,7 @@ li{
     padding: 0 0 20px 0;
     margin-bottom: 20px;
 }
-.blog .contaier .card .into .button{
+.blog .contaier .card .into button{
     font-size: 16px;
     color: #FF0000;
     border: 1px solid #FF0000;
@@ -583,8 +583,10 @@ li{
     margin-left: 50px;
     border-radius: 10px;
     transition: all .3s ease;
+    cursor: pointer;
+    background: none;
 }
-.blog .contaier .card .into .button:hover{
+.blog .contaier .card .into button:hover{
     background: #FF0000;
     color: #fff;
     border: 1px solid #FF0000;
@@ -738,6 +740,7 @@ footer{
     color: #fff;
     border-radius: 10px;
 }
+
 .modal{
     position: fixed;
     left: 0;
@@ -782,7 +785,7 @@ footer{
     font-size: 20px;
 }
 .modal .modal-header .close{
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 .modal__dialog{
@@ -872,6 +875,50 @@ footer{
     color: #fff;
     border: 1px solid #FF0000;
     transition: all .3s ease;
+}
+
+.modall{
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.modall.actvie{
+    z-index: 999;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+}
+.modall .modall-window{
+    background: #fff;
+    width: 800px;
+    border-radius: 10px;
+}
+.modall .modall-header{
+    margin: 2rem 2rem 2rem 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modall .modall-header .closee{
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    top: -30px;
+    right: -15px;
+}
+.modall .modall-header p{
+    margin: 2rem;
 }
 
 
