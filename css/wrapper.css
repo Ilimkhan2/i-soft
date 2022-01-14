@@ -297,7 +297,7 @@ li{
     font-size: 3rem;
     cursor: pointer;
 }
-.modal__dialogw{
+/* .modal__dialogw{
     width: auto;
     position: relative;
     display: flex;
@@ -319,15 +319,15 @@ li{
     color: #FF0000;
     font-size: 25px;
     margin-bottom: 15px;
-}
-.modal-window .button{
+} */
+/* .modal-window .button{
     display: flex;
     justify-content: flex-end;
 }
 .modal .modal-window .button{
     width: 92%;
-}
-.modal .modal-window a{
+} */
+/* .modal .modal-window a{
     background: none;
     font-size: 14px;
     border: 1px solid #FF0000;
@@ -342,7 +342,7 @@ li{
     color: #fff;
     border: 1px solid #FF0000;
     transition: all .3s ease;
-}
+} */
 
 footer{
     background: #FBECEC;

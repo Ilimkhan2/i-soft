@@ -297,7 +297,7 @@ li{
     font-size: 3rem;
     cursor: pointer;
 }
-.modal__dialogw{
+/* .modal__dialogw{
     width: auto;
     position: relative;
     display: flex;
@@ -342,7 +342,7 @@ li{
     color: #fff;
     border: 1px solid #FF0000;
     transition: all .3s ease;
-}
+} */
 
 
 footer{
